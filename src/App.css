@@ -1,38 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: hsl(0, 0%, 94%);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Main {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px 20px 70px 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Text {
+  color: hsl(259, 100%, 65%);
+}
+
+.Button {
+  background-color: hsl(259, 100%, 65%);
+  right: -480px;
+}
+
+@media (max-width: 768px) {
+  .Button {
+    background-color: hsl(259, 100%, 65%);
+    right: -35%;
+  }
+
+  .Main {
+    height: 74%;
+    width: 75%;
+  }
+
+  .Row {
+    width: 110%;
+  }
+
+  .Input {
+    width: 85px;
+  }
+
+  .TextValues {
+    font-size: 50px;
+  }
+
+  .TextBox {
+    padding-top: 10px;
+  }
+
+  .Values {
+    font-size: 40px;
+  }
+
+  .Alert {
+    font-size: 10px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Button:hover {
+  background-color: black !important;
+  box-shadow: 0 0 5px black;
 }
 
-.App-link {
-  color: #61dafb;
+.Input:hover {
+  border-color: hsl(259, 100%, 65%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Lable {
+  color: hsl(0, 1%, 44%);
+}
+
+.Alert {
+  color: hsl(0, 100%, 67%);
+}
+
+.InputBorder {
+  border-color: hsl(0, 100%, 67%);
 }
